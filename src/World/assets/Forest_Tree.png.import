@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Player3_up.png-6422b4eebad8bea8a88d94808e0f8e97.stex"
+path="res://.import/Forest_Tree.png-080a27c52db86419e537aeda9e932269.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Player3_up.png"
-dest_files=[ "res://.import/Player3_up.png-6422b4eebad8bea8a88d94808e0f8e97.stex" ]
+source_file="res://src/World/assets/Forest_Tree.png"
+dest_files=[ "res://.import/Forest_Tree.png-080a27c52db86419e537aeda9e932269.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

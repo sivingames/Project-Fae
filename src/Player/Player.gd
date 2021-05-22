@@ -1,4 +1,4 @@
-extends Area2D
+extends KinematicBody2D
 
 export var speed = 400  # How fast the player will move (pixels/sec).
 var screen_size  # Size of the game window.
@@ -8,6 +8,7 @@ func _ready():
 	
 func _process(delta): #Movement
 	var velocity = Vector2()  # The player's movement vector.
+
 	if Input.is_action_pressed("ui_right"):
 		velocity.x += 1
 	if Input.is_action_pressed("ui_left"):
@@ -35,3 +36,4 @@ func _process(delta): #Movement
 		$AnimatedSprite.animation = "down"
 	elif velocity.y != 0:
 		$AnimatedSprite.animation = "up"
+

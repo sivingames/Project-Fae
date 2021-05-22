@@ -1,0 +1,175 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://src/npc/Fae_Prototype.png" type="Texture" id=1]
+[ext_resource path="res://src/World/assets/Forest_BG.png" type="Texture" id=2]
+[ext_resource path="res://src/World/assets/Forest_Tree.png" type="Texture" id=3]
+[ext_resource path="res://src/World/assets/Footsteps.png" type="Texture" id=4]
+[ext_resource path="res://src/World/assets/Shroom.png" type="Texture" id=5]
+
+[sub_resource type="TileSet" id=1]
+0/name = "Forest_BG.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 32, 32, 1856, 1024 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="OccluderPolygon2D" id=2]
+polygon = PoolVector2Array( 72, 9, 54, 13, 45, 29, 37, 47, 29, 81, 28, 108, 27, 177, 26, 196, 40, 201, 51, 220, 56, 226, 62, 217, 86, 228, 95, 231, 105, 224, 107, 216, 120, 204, 129, 193, 127, 176, 127, 162, 114, 95, 105, 30, 88, 8 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 160, 256, 0, 256, 0, 0, 160, 0 )
+
+[sub_resource type="OccluderPolygon2D" id=4]
+polygon = PoolVector2Array( 50, 360, 43, 341, 36, 327, 48, 329, 54, 329, 59, 316, 68, 302, 80, 291, 98, 282, 118, 274, 135, 267, 153, 260, 161, 254, 156, 245, 144, 239, 136, 232, 134, 239, 130, 247, 123, 249, 113, 249, 108, 254, 99, 257, 87, 255, 69, 246, 60, 237, 49, 228, 42, 218, 38, 204, 36, 189, 41, 176, 47, 172, 43, 161, 48, 157, 54, 149, 64, 149, 65, 139, 77, 137, 86, 128, 101, 128, 112, 130, 119, 140, 126, 141, 132, 143, 139, 140, 142, 130, 141, 123, 140, 112, 137, 103, 133, 92, 140, 92, 144, 99, 152, 94, 155, 82, 160, 75, 151, 64, 157, 60, 161, 65, 172, 57, 178, 55, 166, 35, 174, 36, 176, 42, 185, 46, 192, 46, 197, 42, 201, 37, 213, 31, 223, 25, 223, 16, 229, 13, 238, 24, 245, 31, 253, 26, 259, 20, 267, 25, 278, 31, 294, 33, 313, 34, 328, 31, 330, 39, 325, 43, 329, 53, 328, 61, 331, 68, 346, 81, 360, 93, 365, 93, 370, 104, 380, 118, 389, 131, 381, 138, 377, 135, 369, 140, 367, 149, 361, 152, 362, 163, 361, 173, 361, 181, 374, 185, 378, 194, 384, 200, 395, 199, 406, 201, 417, 208, 424, 221, 428, 233, 427, 238, 427, 247, 427, 263, 422, 276, 415, 288, 412, 299, 400, 299, 389, 298, 385, 305, 375, 311, 348, 311, 327, 310, 319, 313, 311, 314, 301, 304, 293, 306, 289, 292, 280, 287, 269, 284, 262, 283, 245, 290, 227, 303, 216, 316, 213, 327, 219, 338, 232, 339, 242, 340, 233, 349, 230, 355, 245, 367, 251, 376, 248, 383, 235, 382, 224, 384, 215, 389, 207, 396, 189, 403, 176, 411, 165, 420, 159, 425, 158, 436, 148, 439, 139, 434, 134, 447, 127, 457, 117, 457, 112, 443, 109, 423, 105, 402, 102, 389, 88, 380, 79, 376, 69, 382, 52, 387, 28, 388, 10, 395, 2, 398, 2, 388, 13, 383, 26, 375, 38, 369 )
+
+[sub_resource type="ConvexPolygonShape2D" id=5]
+points = PoolVector2Array( 32, 384, 64, 352, 32, 320, 64, 320, 96, 288, 128, 288, 160, 288, 192, 288, 224, 320, 224, 352, 256, 352, 256, 384, 224, 384, 192, 416, 160, 448, 128, 448, 96, 416, 96, 384, 64, 384 )
+
+[sub_resource type="OccluderPolygon2D" id=8]
+polygon = PoolVector2Array( 108, 27, 95, 38, 84, 48, 69, 51, 58, 57, 49, 69, 46, 80, 51, 100, 64, 112, 70, 117, 67, 129, 63, 137, 63, 148, 71, 156, 84, 161, 99, 163, 111, 160, 118, 149, 119, 141, 118, 128, 118, 120, 144, 109, 153, 97, 156, 83, 154, 69, 145, 59, 133, 53, 127, 49, 123, 37, 118, 27 )
+
+[sub_resource type="TileSet" id=6]
+0/name = "Fae_Prototype.png 0"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 64, 0, 160, 256 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/occluder = SubResource( 2 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 3 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "Forest_BG.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 1920, 1024 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "Forest_Tree.png 2"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 32, 0, 448, 480 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/occluder = SubResource( 4 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 5 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 5 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "Footsteps.png 3"
+3/texture = ExtResource( 4 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 448, 384 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "Shroom.png 4"
+4/texture = ExtResource( 5 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 32, 32, 192, 192 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/occluder = SubResource( 8 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="OccluderPolygon2D" id=9]
+polygon = PoolVector2Array( -9.64172, -114.791, -28.1415, -97.9731, -41.5958, -35.7468, -41.5958, -2.11084, -44.9594, 23.116, -44.9594, 51.7065, -44.9594, 71.8879, -38.2322, 80.2969, -21.4143, 102.16, -11.3235, 97.1149, 13.9034, 103.842, 27.3578, 107.206, 34.085, 92.0695, 50.9028, 80.2969, 55.9482, 65.1609, 45.8574, 13.0251, 45.8574, -23.9742, 35.7667, -67.7008, 25.6759, -97.9731, 5.49438, -116.473 )
+
+[sub_resource type="CapsuleShape2D" id=10]
+
+[node name="World" type="Sprite"]
+
+[node name="0" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+centered_textures = true
+format = 1
+tile_data = PoolIntArray( -2555948, 0, 0, -2555919, 0, 0, -2621426, 0, 0, -2621397, 0, 0, -1507372, 0, 0, -1507343, 0, 0, -1572850, 0, 0, -1572821, 0, 0, -458796, 0, 0, -458767, 0, 0, -524274, 0, 0, -524245, 0, 0, 589780, 0, 0, 589809, 0, 0, 524302, 0, 0, 524331, 0, 0, 1638356, 0, 0, 1638385, 0, 0, 1572878, 0, 0, 1572907, 0, 0 )
+
+[node name="1" type="TileMap" parent="."]
+mode = 1
+tile_set = SubResource( 6 )
+centered_textures = true
+format = 1
+tile_data = PoolIntArray( -2949102, 2, 0, -2424826, 2, 0, -2359273, 4, 0, -2359262, 2, 0, -2228224, 3, 0, -1441812, 4, 0, -1376234, 4, 0, -1310709, 2, 0, -983048, 2, 0, -786389, 2, 0, -655379, 4, 0, -458780, 2, 0, -524288, 3, 0, -458731, 2, 0, -196627, 2, 0, -262132, 2, 0, 327653, 2, 0, 327686, 4, 0, 458715, 2, 0, 393245, 4, 0, 589813, 4, 0, 589836, 2, 0, 917484, 2, 0, 1048574, 2, 0, 1245149, 2, 0, 1441765, 4, 0, 1376265, 2, 0, 1572854, 2, 0, 2031598, 2, 0, 2031599, 2, 0, 1966080, 2, 0, 2228216, 4, 0 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
+color = Color( 0.113725, 0.00392157, 0.0862745, 1 )
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="YSort"]
+
+[node name="Wiggggggle" type="AnimatedSprite" parent="YSort/KinematicBody2D"]
+position = Vector2( 1500.82, -1351.07 )
+frames = SubResource( 7 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="YSort/KinematicBody2D"]
+visible = false
+position = Vector2( 1500.82, -1351.07 )
+occluder = SubResource( 9 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/KinematicBody2D"]
+shape = SubResource( 10 )

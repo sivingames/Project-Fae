@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=2]
-
-[ext_resource path="res://assets/World/Mappey.jpg" type="Texture" id=8]
-
-[node name="World" type="Sprite"]
-texture = ExtResource( 8 )
-
-[node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color( 0.117647, 0.0392157, 0.117647, 1 )

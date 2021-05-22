@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Player3_side.png-0b9dfeab8d779176c12d33aeb0f2949b.stex"
+path="res://.import/LichtPlayer.png-74f7a47080bba994dafd62983a563c0a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Player3_side.png"
-dest_files=[ "res://.import/Player3_side.png-0b9dfeab8d779176c12d33aeb0f2949b.stex" ]
+source_file="res://src/Player/LichtPlayer.png"
+dest_files=[ "res://.import/LichtPlayer.png-74f7a47080bba994dafd62983a563c0a.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
