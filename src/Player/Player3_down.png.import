@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Mappey.jpg-06b7d68520624954f8b17c9585595a75.stex"
+path="res://.import/Player3_down.png-e6b95f3de4b8ca2933461be3d3273837.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/World/Mappey.jpg"
-dest_files=[ "res://.import/Mappey.jpg-06b7d68520624954f8b17c9585595a75.stex" ]
+source_file="res://src/Player/Player3_down.png"
+dest_files=[ "res://.import/Player3_down.png-e6b95f3de4b8ca2933461be3d3273837.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

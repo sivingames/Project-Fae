@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Player3_down.png-113c1bc0f535a4976aa2c692f1c15fa0.stex"
+path="res://.import/Player3_side.png-6b5a0ee9dc2669ae46ca544621b4101c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Player3_down.png"
-dest_files=[ "res://.import/Player3_down.png-113c1bc0f535a4976aa2c692f1c15fa0.stex" ]
+source_file="res://src/Player/Player3_side.png"
+dest_files=[ "res://.import/Player3_side.png-6b5a0ee9dc2669ae46ca544621b4101c.stex" ]
 
 [params]
 
